@@ -10,9 +10,10 @@ paramsData = {
   author: 'Hanan',
   tenant: 'Zenken',
   token: '',
+  url: 'https://customerhearingsystem.netlify.app',
 }
 
-iframeSrc.value = `http://localhost:5173/?account=${paramsData.account}&project=${paramsData.project}&author=${paramsData.author}&tenant=${paramsData.tenant}`
+iframeSrc.value = `${paramsData.url}/?account=${paramsData.account}&project=${paramsData.project}&author=${paramsData.author}&tenant=${paramsData.tenant}`
 
 const showIframe = () => {
   isIframeVisible.value = true
